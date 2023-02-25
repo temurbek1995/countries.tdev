@@ -1,19 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- links -->
+    <title>Project</title>
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="dark-mode">
+    <header class="site-header">
+      <div class="container site-header__container">
+        <a href="#" class="site-logo">Where in the world?</a>
+        <button class="header-btn">
+          <span class="header-btn__item">
+            Dark Mode
+          </span>
+        </button>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <!-- form -->
+        <form class="form" action="https://htmlacademy.ru" method="get">
+          <div class="form-input__wrapper">
+            <img
+              class="icon-search"
+              src="photos/icon-search-black.svg"
+              alt="icon-search"
+            />
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Search for a country…"
+              name="search"
+              aria-label="search"
+            />
+            <div class="form-box">
+              <div class="form-box__header-wrapper">
+                <img
+                  class="arrow-icon"
+                  src="photos/Shape.svg"
+                  alt="arrow-icon"
+                />
+                <a class="form-box__header" href="#">
+                  Filter by Region
+                </a>
+              </div>
+              <div class="form-box-wrapper form-box-off">
+                <a href="#" class="form-box__item">Africa</a>
+                <a href="#" class="form-box__item">America</a>
+                <a href="#" class="form-box__item">Asia</a>
+                <a href="#" class="form-box__item">Europe</a>
+                <a href="#" class="form-box__item">Oceania</a>
+              </div>
+            </div>
+          </div>
+        </form>
 
+        <!-- COUNTRIES -->
+        <ul class="list">
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_Germany.svg.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Germany</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    81,770,900
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Europe
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Berlin
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
 
-  <script src="js/main.js"></script>
-</body>
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_America.svg-1.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">United States of America</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    323,947,000
+                  </dd>
+                </div>
+
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Americas
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Washington, D.C.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_brasil.svg-2.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Brazil</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    206,135,893
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Americas
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Brasília
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_swed.svg-3.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Iceland</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">
+                    Population:
+                  </dt>
+                  <dd class="country__value">
+                    334,300
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Europe
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Reykjavík
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_Germany.svg.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Afghanistan</h3>
+
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    27,657,145
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Asia
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Kabul
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_Germany.svg.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Åland Islands</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    28,875
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Europe
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Mariehamn
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_Germany.svg.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Albania</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    2,886,026
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Europe
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Tirana
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="item">
+            <img
+              class="item__img"
+              src="photos/1280px-Flag_of_Germany.svg.png"
+              alt=""
+            />
+            <div class="item__content">
+              <h3 class="item__sub">Algeria</h3>
+              <dl class="country">
+                <div class="country__group">
+                  <dt class="country__info">Population:</dt>
+                  <dd class="country__value">
+                    40,400,000
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Region:</dt>
+                  <dd class="country__value">
+                    Africa
+                  </dd>
+                </div>
+                <div class="country__group">
+                  <dt class="country__info">Capital:</dt>
+                  <dd class="country__value">
+                    Algiers
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
