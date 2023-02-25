@@ -18,6 +18,7 @@ html {
   --body-bg: #fff;
   --header-color: #000;
   --card-bg: #fff;
+  --main-bg: #f2f2f2;
 }
 body {
   display: flex;
@@ -36,6 +37,7 @@ body {
   --text-color: #fff;
   --header-color: #fff;
   --card-bg: #2b3844;
+  --main-bg: #202c36;
 }
 
 img {
@@ -94,15 +96,9 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  background-color: var(--main-bg);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-}
 .site-header {
   padding-top: 23px;
   padding-bottom: 23px;
@@ -316,4 +312,11 @@ select:-webkit-autofill:focus {
 .country__group {
   display: flex;
   align-items: center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }
