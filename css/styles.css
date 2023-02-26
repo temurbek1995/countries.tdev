@@ -211,6 +211,7 @@ select:-webkit-autofill:focus {
 .form-box {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .form-box__header {
   font-family: 'Nunito Sans';
@@ -242,6 +243,9 @@ select:-webkit-autofill:focus {
 }
 .form-box-wrapper {
   display: flex;
+  position: absolute;
+  min-width: 198px;
+  top: 45px;
   flex-direction: column;
   padding: 16px 24px;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
